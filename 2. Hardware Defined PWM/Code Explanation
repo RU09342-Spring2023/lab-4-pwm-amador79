@@ -1,0 +1,2 @@
+This code overall is simple. It is just a normal PWM code with a set duty cycle of 50% and a period of 1kHz. The cycles toggles red led, then green led, then blue led, creating a color cycle effect when used.
+I unfortunatley don't have my MSP430FR2355 anymore so can not test if this works.
