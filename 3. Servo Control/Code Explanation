@@ -1,1 +1,3 @@
-
+The code for this section is pretty simple. I declare 2.7 pin as output pin for servo and then use button 2.3 to increase the duty cycle by 10% for the pin and use button 4.1 to decrease duty cycle by 10%.
+I also made sure that it was impossible for the duty cycle to go above 100% or below 0%. Increasing and decreasing PWM makes it so the servo moves (I think).
+I do not have my MSP430FR2355 anymore nor do I have a servo so I am hoping this works.
