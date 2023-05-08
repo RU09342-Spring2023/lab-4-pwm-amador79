@@ -74,7 +74,7 @@ void __attribute__ ((interrupt(TIMER1_B1_VECTOR))) TIMER1_B1_ISR (void)
 #error Compiler not supported!
 #endif
 {
-    if (state == 0){
+    if (state == 0){                                 // red led
         state = 1;
         switch(__even_in_range(TB1IV,TB1IV_TBIFG))
         {
@@ -92,7 +92,7 @@ void __attribute__ ((interrupt(TIMER1_B1_VECTOR))) TIMER1_B1_ISR (void)
                 break;
         }
     }
-    if (state == 1){
+    if (state == 1){                                // green led
         state = 2;
         switch(__even_in_range(TB1IV,TB1IV_TBIFG))
         {
@@ -110,7 +110,7 @@ void __attribute__ ((interrupt(TIMER1_B1_VECTOR))) TIMER1_B1_ISR (void)
                 break;
         }
     }
-    if (state == 2){
+    if (state == 2){                                // blue led
         state = 0;
         switch(__even_in_range(TB1IV,TB1IV_TBIFG))
         {
